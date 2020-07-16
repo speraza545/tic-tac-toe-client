@@ -22,11 +22,11 @@ body {
   margin: 20px auto 0 auto;
 }
 
-.newGame, .empty{
+.newGame, .empty, .counter{
   height: 70px;
 }
 
-.login, .gameCounter {
+.login{
   align-items: flex-start;
   justify-content: flex-start;
   padding: 10px 10px 10px 10px;
