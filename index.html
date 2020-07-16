@@ -17,7 +17,7 @@
         <div class="col-10 box title">
           <h1>Tic-Tac-Toe</h1>
         </div>
-        <div class="col-12 box login loginContainer">
+        <div class="col-12 box login unauthenticated">
           <form id="signUp">
             <input name="credentials[email]" type="text" placeholder="Email">
             <input name="credentials[password]"type="password" placeholder="Password">
@@ -30,6 +30,8 @@
             <input placeholder="Password" name="credentials[password]" type="password">
             <button id="signInButton" type="submit">Sign In!</button>
           </form>
+        </div>
+          <div class="col-12 box login authenticated">
           <form id="signOut">
             <button type="submit">Sign Out</button>
           </form>
@@ -38,22 +40,23 @@
             <input placeholder="New Password" name="passwords[new]" type="password">
             <button id="changePassword" type="submit">Change Password</button>
           </form>
-        </div>
-        <div class="col-4 box">1</div>
-        <div class="col-4 box">2</div>
-        <div class="col-4 box">3</div>
-        <div class="col-4 box">4</div>
-        <div class="col-4 box">5</div>
-        <div class="col-4 box">6</div>
-        <div class="col-4 box">7</div>
-        <div class="col-4 box">8</div>
-        <div class="col-4 box">9</div>
-        <div class="col-3 box empty">
+          </div>
+        <div class="col-4 box authenticated">1</div>
+        <div class="col-4 box authenticated">2</div>
+        <div class="col-4 box authenticated">3</div>
+        <div class="col-4 box authenticated">4</div>
+        <div class="col-4 box authenticated">5</div>
+        <div class="col-4 box authenticated">6</div>
+        <div class="col-4 box authenticated">7</div>
+        <div class="col-4 box authenticated">8</div>
+        <div class="col-4 box authenticated">9</div>
+        <div class="col-3 box authenticated counter">
           game counter
         </div>
-        <div class="col-6 box newGame">
+        <div class="col-6 box authenticated newGame">
           <button id="newGameButton" type="submit">New Game</button>
         </div>
-        <div class="col-3 box empty"></div>
+        <div class="col-3 box authenticated empty"></div>
+      </div>
     </body>
 </html>
