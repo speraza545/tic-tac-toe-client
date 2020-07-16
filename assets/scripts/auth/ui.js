@@ -1,0 +1,49 @@
+const store = require('../store')
+
+const signUpSuccess = function(){
+  $('#message').text('Successfully signed up!')
+  $('form').trigger('reset')
+}
+
+const signUpFailure = function(){
+  $('#message').text('Sign up failed!')
+}
+
+const signInSuccess = function(response){
+  store.user = response.user
+  $('#message').text('Successfully signed in!')
+  $('form').trigger('reset')
+}
+
+const signInFailure = function(error){
+  $('#message').text('Sign in failed!')
+}
+
+const signOutSuccessful = function() {
+  $('#message').text('Signed Out')
+  store.user = null
+}
+
+const signOutFailure = function(){
+  $('#message').text('sign out failed!')
+}
+
+const changePasswordSuccess = function(){
+  $('#message').text('Password Changed!')
+  $('form').trigger('reset')
+}
+
+const changePasswordFailure = function(){
+  $('#message').text('Change Password failed!')
+}
+
+module.exports = {
+  signUpSuccess,
+  signUpFailure,
+  signInSuccess,
+  signInFailure,
+  signOutSuccessful,
+  signOutFailure,
+  changePasswordSuccess,
+  changePasswordFailure
+}

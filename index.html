@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Tic-Tac-Toe</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,16 +12,48 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <div>login etc</div>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>new game</div>
+      <div class="row">
+        <div class="col-2 box title"><p id="message"></p></div>
+        <div class="col-10 box title">
+          <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="col-12 box login loginContainer">
+          <form id="signUp">
+            <input name="credentials[email]" type="text" placeholder="Email">
+            <input name="credentials[password]"type="password" placeholder="Password">
+            <input name="credentials[password_confirmation]" type="password"
+            placeholder="Confirm Password">
+            <button id="signUpButton" type="submit">Sign Up!</button>
+          </form>
+          <form id="signIn">
+            <input placeholder="Email" name="credentials[email]"type="text">
+            <input placeholder="Password" name="credentials[password]" type="password">
+            <button id="signInButton" type="submit">Sign In!</button>
+          </form>
+          <form id="signOut">
+            <button type="submit">Sign Out</button>
+          </form>
+          <form id="changePassword">
+            <input placeholder="Old Password" name="passwords[old]"type="password">
+            <input placeholder="New Password" name="passwords[new]" type="password">
+            <button id="changePassword" type="submit">Change Password</button>
+          </form>
+        </div>
+        <div class="col-4 box">1</div>
+        <div class="col-4 box">2</div>
+        <div class="col-4 box">3</div>
+        <div class="col-4 box">4</div>
+        <div class="col-4 box">5</div>
+        <div class="col-4 box">6</div>
+        <div class="col-4 box">7</div>
+        <div class="col-4 box">8</div>
+        <div class="col-4 box">9</div>
+        <div class="col-3 box empty">
+          game counter
+        </div>
+        <div class="col-6 box newGame">
+          <button id="newGameButton" type="submit">New Game</button>
+        </div>
+        <div class="col-3 box empty"></div>
     </body>
 </html>
