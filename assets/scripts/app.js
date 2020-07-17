@@ -3,7 +3,6 @@ const authEvents = require('./auth/events')
 
 const gameEvents = require('./game-actions/events')
 
-
 $(() => {
 
   $('.authenticated').hide()
@@ -41,5 +40,6 @@ $(() => {
   $('#bottomMiddle').on('click',gameEvents.onBottomMiddle)
 
   $('#bottomRight').on('click',gameEvents.onBottomRight)
+
 
 })

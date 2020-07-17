@@ -31,7 +31,7 @@
             <button id="signInButton" type="submit">Sign In!</button>
           </form>
         </div>
-          <div class="col-12 box login authenticated">
+        <div class="col-4 box login authenticated">
           <form id="signOut">
             <button type="submit">Sign Out</button>
           </form>
@@ -40,7 +40,9 @@
             <input placeholder="New Password" name="passwords[new]" type="password">
             <button id="changePasswordButton" type="submit">Change Password</button>
           </form>
-          </div>
+        </div>
+        <div class="col-4 box login authenticated"><p id="message2"></p></div>
+        <div class="col-4 box login authenticated"></div>
         <div data-cell-index='0' id="topLeft" class="col-4 box gameboard"></div>
         <div data-cell-index='1' id="topMiddle" class="col-4 box gameboard"></div>
         <div data-cell-index='2' id="topRight" class="col-4 box gameboard"></div>
@@ -50,9 +52,7 @@
         <div data-cell-index='6' id="bottomLeft" class="col-4 box gameboard"></div>
         <div data-cell-index='7' id="bottomMiddle" class="col-4 box gameboard"></div>
         <div data-cell-index='8' id="bottomRight" class="col-4 box gameboard"></div>
-        <div class="col-4 box authenticated counter">
-          game counter
-        </div>
+        <div class="col-4 box authenticated empty1"></div>
         <div class="col-4 box authenticated newGame">
           <button id="newGameButton" type="submit">New Game</button>
         </div>
