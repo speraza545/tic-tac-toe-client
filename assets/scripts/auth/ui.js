@@ -11,6 +11,7 @@ const signUpFailure = function(){
 
 const signInSuccess = function(response){
   store.user = response.user
+  console.log(store.user)
   $('#message').text('Successfully signed in!')
   $('form').trigger('reset')
   $('.authenticated').show()
@@ -26,6 +27,7 @@ const signOutSuccessful = function() {
   store.user = null
   $('.authenticated').hide()
   $('.unauthenticated').show()
+  $('.gameboard').hide()
 }
 
 const signOutFailure = function(){
