@@ -16,7 +16,6 @@ $(() => {
 
   $('#newGameButton').on('click', gameEvents.onNewGame)
 
-
   $('#signUp').on('submit', authEvents.onSignUp)
 
   $('#signIn').on('submit', authEvents.onSignIn)
@@ -42,7 +41,5 @@ $(() => {
   $('#bottomMiddle').on('click',gameEvents.onBottomMiddle)
 
   $('#bottomRight').on('click',gameEvents.onBottomRight)
-
-  $('.gameBoard').on('click', gameEvents.valueSelector)
 
 })

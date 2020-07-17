@@ -1,19 +1,19 @@
 const config = require('../config')
 const store = require('../store')
 const events = require('./events')
+const ui = require('./ui')
 
-  let player = "O"
+ store.player = "O"
 
 const valueSelector =function(){
-  if(player === "O"){
-    player = "X"
-    return player
+  if(store.player === "O"){
+    store.player = "X"
+    return store.player
   }else{
-    player = "O"
-    return player
+    store.player = "O"
+    return store.player
   }
 }
-
 
 const newGame = function(){
   return $.ajax({
@@ -37,7 +37,7 @@ const topLeft = function(){
       game:{
         cell: {
           index: $('#topLeft').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -56,7 +56,7 @@ const topMiddle = function(){
       game:{
         cell: {
           index: $('#topMiddle').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -75,7 +75,7 @@ const topRight = function(){
       game:{
         cell: {
           index: $('#topRight').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -94,7 +94,7 @@ const middleLeft = function(){
       game:{
         cell: {
           index: $('#middleLeft').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -113,7 +113,7 @@ const middleMiddle = function(){
       game:{
         cell: {
           index: $('#middleMiddle').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -132,7 +132,7 @@ const middleRight = function(){
       game:{
         cell: {
           index: $('#middleRight').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -151,7 +151,7 @@ const bottomLeft = function(){
       game:{
         cell: {
           index: $('#bottomLeft').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -170,7 +170,7 @@ const bottomMiddle = function(){
       game:{
         cell: {
           index: $('#bottomMiddle').attr('data-cell-index'),
-          value: player
+          value: store.player
         },
         over: false
       }
@@ -189,7 +189,7 @@ const bottomRight = function(){
       game:{
         cell: {
           index: $('#bottomRight').attr('data-cell-index'),
-          value:  player
+          value:  store.player
         },
         over:  false
       }

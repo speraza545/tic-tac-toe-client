@@ -3,12 +3,6 @@ const api = require('./api')
 const ui = require('./ui')
 const app = require('../app')
 
-// const onValueSelector = function(event){
-//   event.preventDefault()
-//   api.valueSelector()
-//   }
-
-
 const onNewGame = function(){
   event.preventDefault()
   api.newGame()
@@ -126,6 +120,5 @@ module.exports = {
   onBottomLeft,
   onBottomMiddle,
   onBottomRight,
-  onNewGame,
-//  onValueSelector
+  onNewGame
 }
