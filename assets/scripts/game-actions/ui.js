@@ -1,4 +1,5 @@
 const store = require('../store')
+const app = require('../app')
 
 const newGameSuccess = function(response){
   store.game = response.game
@@ -8,72 +9,71 @@ const newGameFailure = function(){
   $('#message').text('Game Not Started')
 }
 
-const topLeftSuccess = function(){
-  console.log("we work")
-  $('#message').text('work')
+const topLeftSuccess = function(response){
+    $('#topLeft').text(response.game.cells[0])
 }
 
-const topLeftFailure = function(){
-  console.log("we work")
+const topLeftFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
-const topMiddleSuccess = function(){
-  console.log("we work")
+const topMiddleSuccess = function(response){
+  $('#topMiddle').text(response.game.cells[1])
 }
-const topMiddleFailure = function(){
-  console.log("we work")
-}
-
-const topRightSuccess = function(){
-  console.log("we work")
-}
-const topRightFailure = function(){
-  console.log("we work")
+const topMiddleFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
-
-const middleLeftSuccess = function(){
-  console.log("we work")
+const topRightSuccess = function(response){
+  $('#topRight').text(response.game.cells[2])
 }
-const middleLeftFailure = function(){
-  console.log("we work")
+const topRightFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
 
-const middleMiddleSuccess = function(){
-  console.log("we work")
+const middleLeftSuccess = function(response){
+  $('#middleLeft').text(response.game.cells[3])
 }
-const middleMiddleFailure = function(){
-  console.log("we work")
+const middleLeftFailure = function(error){
+  $('#message').text("Invalid Move")
+}
+
+
+const middleMiddleSuccess = function(response){
+  $('#middleMiddle').text(response.game.cells[4])
+}
+const middleMiddleFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
 
-const middleRightSuccess = function(){
-  console.log("we work")
+const middleRightSuccess = function(response){
+  $('#middleRight').text(response.game.cells[5])
 }
-const middleRightFailure = function(){
-  console.log("we work")
-}
-
-const bottomLeftSuccess = function(){
-  console.log("we work")
-}
-const bottomLeftFailure = function(){
-  console.log("we work")
+const middleRightFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
-const bottomMiddleSuccess = function(){
-  console.log("we work")
+const bottomLeftSuccess = function(response){
+  $('#bottomLeft').text(response.game.cells[6])
 }
-const bottomMiddleFailure = function(){
-  console.log("we work")
+const bottomLeftFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
-const bottomRightSuccess = function(){
-  console.log("we work")
+const bottomMiddleSuccess = function(response){
+  $('#bottomMiddle').text(response.game.cells[7])
 }
-const bottomRightFailure = function(){
-  console.log("we work")
+const bottomMiddleFailure = function(error){
+  $('#message').text("Invalid Move")
+}
+
+const bottomRightSuccess = function(response){
+  $('#bottomRight').text(response.game.cells[8])
+}
+const bottomRightFailure = function(error){
+  $('#message').text("Invalid Move")
 }
 
 module.exports = {
@@ -85,6 +85,8 @@ module.exports = {
   topRightFailure,
   middleLeftSuccess,
   middleLeftFailure,
+  middleMiddleSuccess,
+  middleMiddleFailure,
   middleRightSuccess,
   middleRightFailure,
   bottomLeftSuccess,

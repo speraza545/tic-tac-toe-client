@@ -1,5 +1,19 @@
 const config = require('../config')
 const store = require('../store')
+const events = require('./events')
+
+  let player = "O"
+
+const valueSelector =function(){
+  if(player === "O"){
+    player = "X"
+    return player
+  }else{
+    player = "O"
+    return player
+  }
+}
+
 
 const newGame = function(){
   return $.ajax({
@@ -12,7 +26,7 @@ const newGame = function(){
 }
 
 const topLeft = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -23,7 +37,7 @@ const topLeft = function(){
       game:{
         cell: {
           index: $('#topLeft').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
         over: false
       }
@@ -31,7 +45,7 @@ const topLeft = function(){
   })
 }
 const topMiddle = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -42,15 +56,15 @@ const topMiddle = function(){
       game:{
         cell: {
           index: $('#topMiddle').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const topRight = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -61,15 +75,15 @@ const topRight = function(){
       game:{
         cell: {
           index: $('#topRight').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const middleLeft = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -80,15 +94,15 @@ const middleLeft = function(){
       game:{
         cell: {
           index: $('#middleLeft').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const middleMiddle = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -99,15 +113,15 @@ const middleMiddle = function(){
       game:{
         cell: {
           index: $('#middleMiddle').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const middleRight = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -118,15 +132,15 @@ const middleRight = function(){
       game:{
         cell: {
           index: $('#middleRight').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const bottomLeft = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -137,15 +151,15 @@ const bottomLeft = function(){
       game:{
         cell: {
           index: $('#bottomLeft').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const bottomMiddle = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -156,15 +170,15 @@ const bottomMiddle = function(){
       game:{
         cell: {
           index: $('#bottomMiddle').attr('data-cell-index'),
-          value: "X"
+          value: player
         },
-        over: "false"
+        over: false
       }
     }
   })
 }
 const bottomRight = function(){
-  $.ajax({
+  return $.ajax({
     url: config.apiUrl + '/games/' + store.game._id,
     method: "PATCH",
     headers:{
@@ -175,9 +189,9 @@ const bottomRight = function(){
       game:{
         cell: {
           index: $('#bottomRight').attr('data-cell-index'),
-          value:  "X"
+          value:  player
         },
-        over:  "false"
+        over:  false
       }
     }
   })
@@ -193,5 +207,6 @@ module.exports = {
   bottomLeft,
   bottomMiddle,
   bottomRight,
-  newGame
+  newGame,
+  valueSelector
 }

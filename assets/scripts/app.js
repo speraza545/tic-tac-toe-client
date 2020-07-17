@@ -5,6 +5,8 @@ const gameEvents = require('./game-actions/events')
 
 
 $(() => {
+  $('.gameboard').on("click", gameEvents.onValueSelector)
+
   $('.authenticated').hide()
 
   $('.gameboard').hide()
@@ -28,7 +30,7 @@ $(() => {
 
   $('#topMiddle').on('click',gameEvents.onTopMiddle)
 
-  $('#topRight').on('click',gameEvents.onTopRight)
+  $('#topRight').on('click', gameEvents.onTopRight)
 
   $('#middleLeft').on('click',gameEvents.onMiddleLeft)
 
@@ -41,5 +43,7 @@ $(() => {
   $('#bottomMiddle').on('click',gameEvents.onBottomMiddle)
 
   $('#bottomRight').on('click',gameEvents.onBottomRight)
+
+  $('.gameBoard').on('click', gameEvents.valueSelector)
 
 })

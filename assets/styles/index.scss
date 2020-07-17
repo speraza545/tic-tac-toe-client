@@ -7,12 +7,16 @@ body {
 
 .box {
   align-items: center;
-  background-color: blue;
+  background-color: $titleAndBottomColor;
   border: 1px solid black;
-  color: orange;
+  color: $textColor;
   display: flex;
   height: 200px;
   justify-content: center;
+}
+
+div{
+  font-family: $gameFont;
 }
 
 
@@ -23,7 +27,7 @@ body {
 }
 
 .newGame, .empty, .counter{
-  height: 70px;
+  height: 80px;
 }
 
 .login{
@@ -44,18 +48,27 @@ input {
 form{
   padding: 0 10px 0 0;
 }
-
-.empty{
-  background-color: $background-color;
-  border: none;
-}
 .newGame{
-  background-color: $newGameButtonTrim;
+  border-left:  none;
+  border-right: none;
 }
 
 #newGameButton {
   width: 100%;
-  height:100%;
+  height: 100%;
   background-color: $newGameButton;
   font-size: 200%;
+}
+
+.gameboard{
+  background-color: $gameBoard;
+  font-size: 90px;
+}
+
+.counter {
+  border-right: none;
+}
+
+.empty {
+  border-left: none;
 }

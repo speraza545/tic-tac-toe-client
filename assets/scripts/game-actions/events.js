@@ -1,6 +1,12 @@
 const getFormFields = require('../../../lib/get-form-fields')
 const api = require('./api')
 const ui = require('./ui')
+const app = require('../app')
+
+const onValueSelector = function(){
+  event.preventDefault()
+  api.valueSelector()
+}
 
 const onNewGame = function(){
   event.preventDefault()
@@ -74,5 +80,6 @@ module.exports = {
   onBottomLeft,
   onBottomMiddle,
   onBottomRight,
-  onNewGame
+  onNewGame,
+  onValueSelector
 }
