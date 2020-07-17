@@ -5,7 +5,6 @@ const gameEvents = require('./game-actions/events')
 
 
 $(() => {
-  $('.gameboard').on("click", gameEvents.onValueSelector)
 
   $('.authenticated').hide()
 
