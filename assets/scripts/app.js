@@ -41,5 +41,7 @@ $(() => {
 
   $('#bottomRight').on('click',gameEvents.onBottomRight)
 
+  $('#gameIndex').on('click', gameEvents.onGetIndex)
+
 
 })

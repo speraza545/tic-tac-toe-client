@@ -4,6 +4,13 @@ const ui = require('./ui')
 const app = require('../app')
 const store = ("../store")
 
+const onGetIndex = function(){
+  event.preventDefault()
+  api.getIndex()
+    .then(ui.onGetIndexSuccess)
+    .catch(ui.onGetIndexFailure)
+}
+
 const onNewGame = function(){
   event.preventDefault()
   api.newGame()
@@ -19,7 +26,7 @@ const onTopLeft = function(){
         .then(ui.topLeftSuccess)
         .catch(ui.topLeftFailure)
       }else{
-        $('#message').text("Invalid Move")
+        $('#message2').text("Invalid Move")
       }
 }
 const onTopMiddle = function(){
@@ -30,7 +37,7 @@ const onTopMiddle = function(){
       .then(ui.topMiddleSuccess)
       .catch(ui.topMiddleFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onTopRight = function(){
@@ -41,7 +48,7 @@ const onTopRight = function(){
       .then(ui.topRightSuccess)
       .catch(ui.topRightFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onMiddleLeft = function(){
@@ -52,7 +59,7 @@ const onMiddleLeft = function(){
       .then(ui.middleLeftSuccess)
       .catch(ui.middleLeftFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onMiddleMiddle = function(){
@@ -63,7 +70,7 @@ const onMiddleMiddle = function(){
       .then(ui.middleMiddleSuccess)
       .catch(ui.middleMiddleFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onMiddleRight = function(){
@@ -74,7 +81,7 @@ const onMiddleRight = function(){
       .then(ui.middleRightSuccess)
       .catch(ui.middleRightFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onBottomLeft = function(){
@@ -85,7 +92,7 @@ const onBottomLeft = function(){
       .then(ui.bottomLeftSuccess)
       .catch(ui.bottomLeftFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onBottomMiddle = function(){
@@ -96,7 +103,7 @@ const onBottomMiddle = function(){
       .then(ui.bottomMiddleSuccess)
       .catch(ui.bottomMiddleFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 const onBottomRight = function(){
@@ -107,7 +114,7 @@ const onBottomRight = function(){
       .then(ui.bottomRightSuccess)
       .catch(ui.bottomRightFailure)
     }else{
-      $('#message').text("Invalid Move")
+      $('#message2').text("Invalid Move")
     }
 }
 
@@ -121,5 +128,6 @@ module.exports = {
   onBottomLeft,
   onBottomMiddle,
   onBottomRight,
-  onNewGame
+  onNewGame,
+  onGetIndex
 }

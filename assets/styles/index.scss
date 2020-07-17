@@ -32,7 +32,7 @@ div{
 
 .login{
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 10px 10px 10px 10px;
   height: 140px;
 }
@@ -71,4 +71,27 @@ form{
 
 .empty {
   border-left: none;
+}
+
+.indexbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#stats{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.message2box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#message2 {
+  font-size: 40px;
 }

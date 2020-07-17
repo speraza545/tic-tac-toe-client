@@ -22,6 +22,14 @@ const newGameFailure = function(){
   $('#message').text('Game Not Started')
 }
 
+const onGetIndexSuccess = function(response){
+  $('#stats').text("You have played " + response.games.length+ " games!")
+}
+
+const onGetIndexFailure = function(error){
+  $('#stats').text('get stats failed')
+}
+
 const topLeftSuccess = function(response){
   store.game.cells[0] = response.game.cells[0]
     $('#topLeft').text(response.game.cells[0])
@@ -539,5 +547,7 @@ module.exports = {
   bottomRightSuccess,
   bottomRightFailure,
   newGameSuccess,
-  newGameFailure
+  newGameFailure,
+  onGetIndexSuccess,
+  onGetIndexFailure
 }
