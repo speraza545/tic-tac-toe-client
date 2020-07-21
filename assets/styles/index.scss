@@ -1,0 +1,97 @@
+@import '~bootstrap/scss/bootstrap';
+@import './variables';
+
+body {
+  background-color: $background-color;
+}
+
+.box {
+  align-items: center;
+  background-color: $titleAndBottomColor;
+  border: 1px solid black;
+  color: $textColor;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+}
+
+div{
+  font-family: $gameFont;
+}
+
+
+.row{
+  display: flex;
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+}
+
+.newGame, .empty, .empty1{
+  height: 80px;
+}
+
+.login{
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+  height: 140px;
+}
+
+.title{
+  height: 70px;
+}
+
+input {
+  display: block;
+}
+
+form{
+  padding: 0 10px 0 0;
+}
+.newGame{
+  border-left:  none;
+  border-right: none;
+}
+
+#newGameButton {
+  width: 100%;
+  height: 100%;
+  background-color: $newGameButton;
+  font-size: 200%;
+}
+
+.gameboard{
+  background-color: $gameBoard;
+  font-size: 90px;
+}
+
+.empty1 {
+  border-right: none;
+}
+
+.empty {
+  border-left: none;
+}
+
+.indexbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#stats{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.message2box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#message2 {
+  font-size: 40px;
+}
