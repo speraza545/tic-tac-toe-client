@@ -15,6 +15,8 @@ const signInSuccess = function(response){
   $('form').trigger('reset')
   $('.authenticated').show()
   $('.unauthenticated').hide()
+  $('#message2').empty()
+  $("#stats").empty()
 }
 
 const signInFailure = function(error){
