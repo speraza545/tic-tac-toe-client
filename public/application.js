@@ -17245,6 +17245,8 @@ var signInSuccess = function signInSuccess(response) {
   $('form').trigger('reset');
   $('.authenticated').show();
   $('.unauthenticated').hide();
+  $('#message2').empty();
+  $("#stats").empty();
 };
 
 var signInFailure = function signInFailure(error) {
