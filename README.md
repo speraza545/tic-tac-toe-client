@@ -1,3 +1,4 @@
+```
 #Tic Tac Toe Game
 This application lets a players test their skills in a battle of wits,
 and intelligence, known as tic tac toe.
@@ -36,6 +37,7 @@ how much time Im spending on this app for my skills to improve.
 I would like to eventually install a timer for the turns, so each person
 only has 3 seconds to make a move. I think this would make the game more exciting
 and add more variety to it.
+```
 ```
 [wireframe]https://imgur.com/a/Vnq5seo
 ```
