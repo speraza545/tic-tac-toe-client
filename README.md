@@ -1,4 +1,4 @@
-```
+```md
 #Tic Tac Toe Game
 This application lets a players test their skills in a battle of wits,
 and intelligence, known as tic tac toe.
