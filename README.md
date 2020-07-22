@@ -1,8 +1,10 @@
 #Tic Tac Toe Game
+
 This application lets a players test their skills in a battle of wits,
 and intelligence, known as tic tac toe.
 
 ##Technologies Used:
+
  HTML, CSS, Boostrap, Jquery, and Javascript.
 
 ##Planning Story
@@ -22,6 +24,7 @@ However the whole trial, and error, process did help me understand
 how to communicate with the computer better. More importantly, IT WORKED!
 
 ###User Stories
+
 As a user, I want the ability to start a new game so I can keep the fun going
 
 As a user, I want a simple, easy to understand design so I dont get lost
@@ -34,6 +37,7 @@ As a user, I want to see how many games I play, so I can really consider
 how much time Im spending on this app for my skills to improve.
 
 ###Unsolved Problems
+
 I would like to eventually install a timer for the turns, so each person
 only has 3 seconds to make a move. I think this would make the game more exciting
 and add more variety to it.
