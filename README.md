@@ -6,6 +6,7 @@ and intelligence, known as tic tac toe.
  HTML, CSS, Boostrap, Jquery, and Javascript.
 
 ##Planning Story
+
 When I approached this project, I started off with a wireframe, and a general
 concept of how I wanted the game to operate. The tough part was just mixing
 my ideas with the computers language. A lot of my code edits, and fixes
