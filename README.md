@@ -3,7 +3,7 @@
 This application lets a players test their skills in a battle of wits,
 and intelligence, known as tic tac toe.
 
-##Technologies Used:
+## Technologies Used:
 
  HTML, CSS, Boostrap, Jquery, and Javascript.
 
