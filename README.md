@@ -1,4 +1,4 @@
-#Tic Tac Toe Game
+# Tic Tac Toe Game
 
 This application lets a players test their skills in a battle of wits,
 and intelligence, known as tic tac toe.
@@ -7,7 +7,7 @@ and intelligence, known as tic tac toe.
 
  HTML, CSS, Boostrap, Jquery, and Javascript.
 
-##Planning Story
+## Planning Story
 
 When I approached this project, I started off with a wireframe, and a general
 concept of how I wanted the game to operate. The tough part was just mixing
@@ -23,7 +23,7 @@ it wasn't. Various web articles were also helpful.
 However the whole trial, and error, process did help me understand
 how to communicate with the computer better. More importantly, IT WORKED!
 
-###User Stories
+### User Stories
 
 As a user, I want the ability to start a new game so I can keep the fun going
 
@@ -36,7 +36,7 @@ if I win.
 As a user, I want to see how many games I play, so I can really consider
 how much time Im spending on this app for my skills to improve.
 
-###Unsolved Problems
+### Unsolved Problems
 
 I would like to eventually install a timer for the turns, so each person
 only has 3 seconds to make a move. I think this would make the game more exciting
