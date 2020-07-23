@@ -42,6 +42,6 @@ I would like to eventually install a timer for the turns, so each person
 only has 3 seconds to make a move. I think this would make the game more exciting
 and add more variety to it.
 
-```
-[wireframe]https://imgur.com/a/Vnq5seo
-```
+
+[wireframe](https://imgur.com/a/Vnq5seo)
+
